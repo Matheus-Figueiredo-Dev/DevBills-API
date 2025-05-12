@@ -1,6 +1,6 @@
 # DevBills API
 
-Uma API RESTful para controle de transações financeiras, construída com **Fastify**, **Prisma** e **SQLite** (ou outro banco configurável). Desenvolvido como parte de um desafio para praticar back-end com TypeScript.
+Uma API RESTful para controle de transações financeiras, construída com **Fastify**, **Prisma** e **MongoDB**. Desenvolvido como parte de um desafio para praticar back-end com TypeScript.
 
 ## 📦 Tecnologias
 
@@ -8,7 +8,7 @@ Uma API RESTful para controle de transações financeiras, construída com **Fas
 - [Prisma ORM](https://www.prisma.io/)
 - [Zod](https://zod.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [SQLite/PostgreSQL/MySQL] (dependendo do ambiente)
+- [MongoDB](https://www.mongodb.com/)
 
 ## 🚀 Funcionalidades
 
