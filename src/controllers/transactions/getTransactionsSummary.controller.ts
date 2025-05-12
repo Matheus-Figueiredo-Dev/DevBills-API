@@ -83,6 +83,7 @@ const getTransactionsSummary = async (
         }))
         .sort((a, b) => b.amount - a.amount),
     };
+    reply.send(summary);
   } catch (err) {
     request.log.error('Error on get transactions!', err);
     reply.status(500).send({ error: 'Internal server error!' });
