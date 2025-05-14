@@ -1,73 +1,76 @@
-# DevBills API
+💰 DevBills - Back-End
+Este é o back-end da aplicação DevBills, uma ferramenta de controle financeiro pessoal desenvolvida para treinar boas práticas com TypeScript, banco de dados e validação de dados. A aplicação oferece funcionalidades completas para gerenciamento de entradas, saídas, categorias e usuários.
 
-Uma API RESTful para controle de transações financeiras, construída com **Fastify**, **Prisma** e **MongoDB**. Desenvolvido como parte de um desafio para praticar back-end com TypeScript.
+🎯 Objetivo
+Criar uma API robusta e segura, estruturada com Fastify, e com banco de dados relacional e não-relacional para melhor organização das informações financeiras e operacionais.
 
-## 📦 Tecnologias
+⚙️ Tecnologias Utilizadas
+TypeScript – Tipagem estática para melhor manutenção e legibilidade;
+Fastify – Framework web leve e rápido;
+Prisma – ORM para trabalhar com banco relacional (usuários, transações e categorias);
+MongoDB – Armazenamento flexível para dados complementares;
+Zod – Validação de dados;
+Schema / Controllers / Routes – Estruturação clara e organizada da aplicação;
 
-- [Fastify](https://www.fastify.io/)
-- [Prisma ORM](https://www.prisma.io/)
-- [Zod](https://zod.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [MongoDB](https://www.mongodb.com/)
+📌 Funcionalidades
+Cadastro e login de usuários
+Criação, edição e remoção de:
+Transações financeiras (entrada e saída)
+Categorias personalizadas
+Validação de dados com Zod
+Separação clara entre:
+Schemas (validação)
+Controllers (lógica de negócio)
+Routes (organização de rotas da API)
 
-## 🚀 Funcionalidades
+Conexão com dois bancos:
+PostgreSQL (via Prisma): dados estruturados
+MongoDB: dados de histórico ou extras
 
-- ✅ Criar transações
-- ✅ Listar transações por usuário
-- ✅ Validar entrada de dados com Zod
-- ✅ Exibir saldo (balance) calculado
-- ✅ Arredondar valores de saída
-- ✅ Deletar transações
-- ✅ Middleware de autenticação simplificado
+🧠 Aprendizados
+Utilização de TypeScript para tipagem forte e previsível
+Prática com dois bancos de dados diferentes no mesmo projeto
+Estruturação limpa com Fastify e separação de responsabilidades
+Criação de rotas seguras e performáticas
+Validação de dados segura com Zod
 
-## 📂 Estrutura do Projeto
+🚀 Como Rodar o Projeto
+Clone o repositório:
 
-```
-src/
-├── controllers/
-├── routes/
-├── schemas/
-├── config/
-│   └── prisma.ts
-├── index.ts
-prisma/
-│   └── schema.prisma
-```
+bash
+Copiar
+Editar
+git clone https://github.com/Matheus-Figueiredo-Dev/DevBills-API.git
+Instale as dependências:
 
-## ▶️ Como rodar o projeto
+bash
+Copiar
+Editar
+yarn
+Configure o ambiente:
+Crie um arquivo .env com as informações de conexão para o PostgreSQL e MongoDB.
 
-### 1. Clone o repositório
+env
+Copiar
+Editar
+DATABASE_URL="postgresql://usuario:senha@localhost:5432/devbills"
+MONGO_URL="mongodb://localhost:27017/devbills"
+Execute as migrações do Prisma:
 
-```bash
-git clone https://github.com/MatheusFigueiredo1001/DevBills-api.git
-cd DevBills-api
-```
-
-### 2. Instale as dependências
-
-```bash
-yarn install
-```
-
-### 3. Configure o banco de dados
-
-Crie um arquivo `.env`:
-
-```env
-DATABASE_URL="file:./dev.db" # ou PostgreSQL, MySQL conforme desejado
-```
-
-### 4. Execute a migração e rode o projeto
-
-```bash
+bash
+Copiar
+Editar
 npx prisma db push
+Inicie a aplicação:
+
+bash
+Copiar
+Editar
 yarn dev
-```
 
-### 5. Acesse
+![image](https://github.com/user-attachments/assets/513a0a13-50d6-4060-b7ab-b255e533b4d5)
 
-Servidor rodando em: `http://localhost:3001`
+![image](https://github.com/user-attachments/assets/020644e2-7bb4-486b-88dd-dfb831e4d517)
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT.
+📍 Status
+✅ Projeto concluído e em constante melhoria. Pronto para integração com um front-end futuro.
