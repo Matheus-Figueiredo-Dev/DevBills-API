@@ -34,43 +34,34 @@ Estruturação limpa com Fastify e separação de responsabilidades
 Criação de rotas seguras e performáticas
 Validação de dados segura com Zod
 
-🚀 Como Rodar o Projeto
-Clone o repositório:
-
-bash
-Copiar
-Editar
-git clone https://github.com/Matheus-Figueiredo-Dev/DevBills-API.git
-Instale as dependências:
-
-bash
-Copiar
-Editar
-yarn
-Configure o ambiente:
-Crie um arquivo .env com as informações de conexão para o PostgreSQL e MongoDB.
-
-env
-Copiar
-Editar
-DATABASE_URL="postgresql://usuario:senha@localhost:5432/devbills"
-MONGO_URL="mongodb://localhost:27017/devbills"
-Execute as migrações do Prisma:
-
-bash
-Copiar
-Editar
-npx prisma db push
-Inicie a aplicação:
-
-bash
-Copiar
-Editar
-yarn dev
-
 ![image](https://github.com/user-attachments/assets/513a0a13-50d6-4060-b7ab-b255e533b4d5)
 
 ![image](https://github.com/user-attachments/assets/020644e2-7bb4-486b-88dd-dfb831e4d517)
 
 📍 Status
 ✅ Projeto concluído e em constante melhoria. Pronto para integração com um front-end futuro.
+
+🚀 Como Rodar o Projeto
+1. **Clone o repositório**:
+
+```bash
+git clone https://github.com/Matheus-Figueiredo-Dev/DevBills-API.git
+cd DevBills-API
+
+2. **Instale as dependências**:
+yarn
+
+3. **Configure as variáveis de ambiente**:
+Crie um arquivo .env na raiz do projeto com as strings de conexão para o PostgreSQL e o MongoDB:
+
+DATABASE_URL="postgresql://usuario:senha@localhost:5432/devbills"
+MONGO_URL="mongodb://localhost:27017/devbills"
+
+Substitua usuario, senha e os nomes dos bancos pelos seus dados reais.
+
+4. *Execute as migrações do Prisma**:
+npx prisma db push
+
+4. *Inicie a aplicação**:
+yarn dev
+
